@@ -18,15 +18,10 @@ public class ScooterOrderFirstPage {
     private By next = By.xpath("//button[text()='Далее']");
 
     //Выбор станций для заказа с помощью верхней и нижней кнопок Заказать
-    private By stationUp = By.xpath("//div[text()='Черкизовская']");
-    private By stationBottom = By.xpath("//div[text()='Сокольники']");
+    private By station = By.xpath("//div[text()='Черкизовская']");
 
-    public By getStationUp() {
-        return stationUp;
-    }
-
-    public By getStationBottom() {
-        return stationBottom;
+    public By getStation() {
+        return station;
     }
 
     public ScooterOrderFirstPage(WebDriver driver) {

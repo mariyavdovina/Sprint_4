@@ -12,13 +12,10 @@ public class ScooterOrderSecondPage {
     private By periodField = By.xpath("//div[text()='* Срок аренды']");
     private By comment = By.xpath("//input[@placeholder='Комментарий для курьера']");
     //Сразу задаем селекторы для оформления заказа при помощи нижней и верхней кнопок Заказать
-    private By colourUp = By.id("black");
-    private By colourBottom = By.id("grey");
+    private By colour = By.id("black");
+    private By date = By.xpath("//div[@aria-label='Choose воскресенье, 31-е июля 2022 г.']");
+    private By period = By.xpath("//div[text()='сутки']");
 
-    private By dateUp = By.xpath("//div[@aria-label='Choose воскресенье, 31-е июля 2022 г.']");
-    private By dateBottom = By.xpath("//div[@aria-label='Choose пятница, 29-е июля 2022 г.']");
-    private By periodUp = By.xpath("//div[text()='сутки']");
-    private By periodBottom = By.xpath("//div[text()='двое суток']");
     //Сами верхняя и нижняя кнопки Заказать
     private By buttonOrderUp = By.xpath("//button[@class='Button_Button__ra12g']");
     private By buttonOrderBottom = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
@@ -27,28 +24,16 @@ public class ScooterOrderSecondPage {
         return comment;
     }
 
-    public By getDateUp() {
-        return dateUp;
+    public By getDate() {
+        return date;
     }
 
-    public By getDateBottom() {
-        return dateBottom;
+    public By getPeriod() {
+        return period;
     }
 
-    public By getPeriodUp() {
-        return periodUp;
-    }
-
-    public By getPeriodBottom() {
-        return periodBottom;
-    }
-
-    public By getColourUp() {
-        return colourUp;
-    }
-
-    public By getColourBottom() {
-        return colourBottom;
+    public By getColour() {
+        return colour;
     }
 
     public By getButtonOrderUp() {
