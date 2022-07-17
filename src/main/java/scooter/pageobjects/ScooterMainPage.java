@@ -25,13 +25,12 @@ public class ScooterMainPage {
     public ScooterMainPage(WebDriver driver){
         this.driver = driver;
     }
-
     //Нажатие кнопки Заказать, нижней или верхней
     public void pressOrder(By buttonOrder) {
         driver.findElement(buttonOrder).click();
     }
 
-    //Метод для проверки корректного отобрпажения текста ответов на Вопросы о важном
+    //Метод для проверки корректного отображения текста ответов на Вопросы о важном
     public String checkQuestion(By question, By answer){
         WebElement element = driver.findElement(question);
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);

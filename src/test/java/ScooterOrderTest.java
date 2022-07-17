@@ -37,7 +37,6 @@ public class ScooterOrderTest {
 
         };
     }
-
     @Test
     public void shouldBeOrderButton() {
         if (orderButtonFirst.equals(By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[text()='Заказать']"))) {
