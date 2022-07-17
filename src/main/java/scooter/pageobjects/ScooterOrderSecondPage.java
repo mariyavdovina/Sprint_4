@@ -15,7 +15,6 @@ public class ScooterOrderSecondPage {
     private By colour = By.id("black");
     private By date = By.xpath("//div[@aria-label='Choose воскресенье, 31-е июля 2022 г.']");
     private By period = By.xpath("//div[text()='сутки']");
-
     //Сами верхняя и нижняя кнопки Заказать
     private By buttonOrderUp = By.xpath("//button[@class='Button_Button__ra12g']");
     private By buttonOrderBottom = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");

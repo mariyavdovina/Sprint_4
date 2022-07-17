@@ -24,7 +24,6 @@ public class ScooterMainPageTest {
 
     private final WebDriver driver;
     private ScooterMainPage objScooterMainPage;
-
     /*    @Before
     public void init(){
         driver = new ChromeDriver();

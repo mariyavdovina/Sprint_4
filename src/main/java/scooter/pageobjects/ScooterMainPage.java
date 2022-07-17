@@ -25,7 +25,6 @@ public class ScooterMainPage {
     public ScooterMainPage(WebDriver driver){
         this.driver = driver;
     }
-
     //Нажатие кнопки Заказать, нижней или верхней
     public void pressOrder(By buttonOrder) {
         driver.findElement(buttonOrder).click();

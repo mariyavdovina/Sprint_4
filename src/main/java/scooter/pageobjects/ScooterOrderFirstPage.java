@@ -56,7 +56,6 @@ public class ScooterOrderFirstPage {
     public void pressNext() {
         driver.findElement(next).click();
     }
-
     //Переход ко второй странице заказа в одном методе
     public void goToNextPage(String firstName, String secondName, String adress, By station, String phone) {
         setFirstName(firstName);
